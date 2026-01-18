@@ -3,6 +3,11 @@
     <div class="container-fluid">
       <a class="navbar-brand" href="{{ shop.url }}">
         {% if settings.logo != blank %}
+          <img
+            src="{{ settings.logo | img_url:'small' }}"
+            alt=""
+            width="50"
+            height="40">
         {% else %}
           {{ shop.name }}
         {% endif %}

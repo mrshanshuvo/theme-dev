@@ -1,9 +1,81 @@
-<div class="image-banner-{{section.id}}">
-    <h1>Image Banner Tested</h1>
-</div>
-{% schema  %} 
+<section class="image-banner-{{ section.id }} position-relative text-white d-flex align-items-center justify-content-center">
+  {% if section.settings.image %}
+    <img
+      src="{{ section.settings.image | image_url: width: 2000 }}"
+      alt="{{ section.settings.heading | escape }}"
+      class="img-fluid w-100 h-100 position-absolute top-0 start-0 object-fit-cover"
+      loading="lazy"
+      width="auto"
+      height="auto"
+    >
+  {% endif %}
+
+  <div class="position-relative text-center px-3">
+    {% if section.settings.heading != blank %}
+      <h1 class="display-5 fw-bold">
+        {{ section.settings.heading }}
+      </h1>
+    {% endif %}
+
+    {% if section.settings.text != blank %}
+      <p class="lead">
+        {{ section.settings.text }}
+      </p>
+    {% endif %}
+
+    {% if section.settings.button_text != blank %}
+      <a
+        href="{{ section.settings.button_link }}"
+        class="btn btn-primary btn-lg mt-3">
+        {{ section.settings.button_text }}
+      </a>
+    {% endif %}
+  </div>
+</section>
+
+<style>
+  .image-banner-{{ section.id }} {
+    min-height: 60vh;
+  }
+
+  .image-banner-{{ section.id }} img {
+    object-fit: cover;
+    z-index: 0;
+  }
+</style>
+
+{% schema %}
 {
-    "name": "Image Banner",
-    "settings": []
+  "name": "Image Banner",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Banner image"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Image Banner Title"
+    },
+    {
+      "type": "textarea",
+      "id": "text",
+      "label": "Description",
+      "default": "This is a simple image banner section."
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button text",
+      "default": "Shop now"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button link"
+    }
+  ]
 }
 {% endschema %}

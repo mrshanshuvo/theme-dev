@@ -1,12 +1,20 @@
-<div class="sub-footer">
-    <p>This is sub footer</p>
+<div class="sub-footer border-top py-3">
+  <div class="container d-flex flex-column flex-md-row gap-2 align-items-center justify-content-between">
+    <p class="mb-0 small text-muted">
+      © {{ 'now' | date: '%Y' }} {{ shop.name }}. All rights reserved.
+    </p>
+
+    <ul class="nav small">
+      <li class="nav-item"><a class="nav-link px-2 text-muted" href="/policies/privacy-policy">Privacy</a></li>
+      <li class="nav-item"><a class="nav-link px-2 text-muted" href="/policies/terms-of-service">Terms</a></li>
+      <li class="nav-item"><a class="nav-link px-2 text-muted" href="/policies/refund-policy">Refund</a></li>
+    </ul>
+  </div>
 </div>
 
 {% schema %}
 {
-    "name": "Sub Footer",
-    "settings": [
-        
-        ]
+  "name": "Sub Footer",
+  "settings": []
 }
 {% endschema %}
