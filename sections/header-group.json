@@ -13,12 +13,21 @@
   "sections": {
     "announcement": {
       "type": "announcement-bar",
-      "settings": {}
+      "settings": {
+        "message": "25% OFF for US delivery!"
+      }
     },
     "header": {
       "type": "header",
-      "settings": {}
+      "settings": {
+        "brand_text": "Navbar",
+        "menu": "customer-account-main-menu",
+        "show_search": true
+      }
     }
   },
-  "order": ["announcement", "header"]
+  "order": [
+    "announcement",
+    "header"
+  ]
 }
