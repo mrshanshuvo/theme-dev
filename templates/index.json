@@ -14,6 +14,8 @@
       "settings": {
         "image": "shopify://shop_images/4.webp",
         "heading": "A quality product of the top brand around the world",
+        "text_color": "#121212",
+        "text_bg_color": "#00000066",
         "text": "This is a simple image banner section.",
         "button_text": "Shop now",
         "button_link": ""
