@@ -12,7 +12,8 @@
     "image_banner": {
       "type": "image-banner",
       "settings": {
-        "heading": "Image Banner Title",
+        "image": "shopify://shop_images/4.webp",
+        "heading": "A quality product of the top brand around the world",
         "text": "This is a simple image banner section.",
         "button_text": "Shop now",
         "button_link": ""
