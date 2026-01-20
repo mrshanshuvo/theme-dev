@@ -9,25 +9,37 @@
       height="auto">
   {% endif %}
 
-  <div class="position-relative text-center px-3 ">
+  <div class="position-relative text-center px-3" style="
+    background-color: {{ section.settings.text_bg_color }};
+    padding: 1.5rem;
+    border-radius: 8px;
+  ">
     {% if section.settings.heading != blank %}
-      <h1 class="display-5 fw-bold">
+      <h1 class="display-5 fw-bold" style="color: {{ section.settings.heading_color }};">
         {{ section.settings.heading }}
       </h1>
     {% endif %}
 
     {% if section.settings.text != blank %}
-      <p class="lead">
+      <p class="lead" style="color: {{ section.settings.text_color }};">
         {{ section.settings.text }}
       </p>
     {% endif %}
 
     {% if section.settings.button_text != blank %}
-      <a href="{{ section.settings.button_link }}" class="btn btn-primary btn-lg mt-3">
+      <a
+        href="{{ section.settings.button_link }}"
+        class="btn btn-lg mt-3"
+        style="
+        color: {{ section.settings.button_text_color }};
+        background-color: {{ section.settings.button_bg_color }};
+        border-color: {{ section.settings.button_bg_color }};
+      ">
         {{ section.settings.button_text }}
       </a>
     {% endif %}
   </div>
+
 </section>
 
 <style>
@@ -59,15 +71,30 @@
       },
       {
         "type": "color",
-        "id": "text_color",
-        "label": "Text Color",
+        "id": "heading_color",
+        "label": "Heading color",
         "default": "#ffffff"
       },
       {
         "type": "color",
+        "id": "text_color",
+        "label": "Description color",
+        "default": "#f1f1f1"
+      }, {
+        "type": "color",
         "id": "text_bg_color",
         "label": "Text background color",
         "default": "rgba(0,0,0,0.4)"
+      }, {
+        "type": "color",
+        "id": "button_text_color",
+        "label": "Button text color",
+        "default": "#ffffff"
+      }, {
+        "type": "color",
+        "id": "button_bg_color",
+        "label": "Button background color",
+        "default": "#0d6efd"
       }, {
         "type": "textarea",
         "id": "text",
