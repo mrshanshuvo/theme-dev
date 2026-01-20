@@ -17,30 +17,6 @@
     },
     "1768876090f56176ed": {
       "type": "_blocks",
-      "blocks": {
-        "ai_gen_block_ffbb531_MGCGgj": {
-          "type": "ai_gen_block_ffbb531",
-          "settings": {
-            "heading_text": "Glowing Heading",
-            "heading_tag": "h2",
-            "font_size": 48,
-            "font_weight": "700",
-            "text_alignment": "center",
-            "text_color": "#ffffff",
-            "glow_color": "#00ffff",
-            "glow_blur": 10,
-            "animation_speed": 2,
-            "pulse_opacity": 0.8,
-            "padding_top": 40,
-            "padding_bottom": 40,
-            "desktop_width_percent": 100
-          },
-          "blocks": {}
-        }
-      },
-      "block_order": [
-        "ai_gen_block_ffbb531_MGCGgj"
-      ],
       "settings": {}
     }
   },
