@@ -11,7 +11,9 @@
   "sections": {
     "image_banner": {
       "type": "image-banner",
-      "settings": {}
+      "settings": {
+        "image": "shopify://shop_images/4.webp"
+      }
     },
     "1768876090f56176ed": {
       "type": "_blocks",
