@@ -1,12 +1,48 @@
-<div class="footer">
-    <p>This is footer</p>
-</div>
+<footer class="footer bg-dark text-white pt-5 pb-4">
+  <div class="container">
+    <div class="row g-4">
+
+      <div class="col-12 col-md-3">
+        <h6 class="fw-bold">{{ shop.name }}</h6>
+        <p class="small text-muted">
+          Premium products and quality service you can trust.
+        </p>
+      </div>
+
+      <div class="col-6 col-md-3">
+        <h6 class="fw-bold">Shop</h6>
+        <ul class="list-unstyled">
+          <li><a href="/collections/all" class="text-muted text-decoration-none">All Products</a></li>
+          <li><a href="/collections/new" class="text-muted text-decoration-none">New Arrivals</a></li>
+          <li><a href="/collections/sale" class="text-muted text-decoration-none">Sale</a></li>
+        </ul>
+      </div>
+
+      <div class="col-6 col-md-3">
+        <h6 class="fw-bold">Support</h6>
+        <ul class="list-unstyled">
+          <li><a href="/pages/contact" class="text-muted text-decoration-none">Contact</a></li>
+          <li><a href="/policies/shipping-policy" class="text-muted text-decoration-none">Shipping</a></li>
+          <li><a href="/policies/refund-policy" class="text-muted text-decoration-none">Returns</a></li>
+        </ul>
+      </div>
+
+      <div class="col-12 col-md-3">
+        <h6 class="fw-bold">Newsletter</h6>
+        <p class="small text-muted">Get updates & offers</p>
+        <form class="d-flex gap-2">
+          <input class="form-control form-control-sm" type="email" placeholder="Email">
+          <button class="btn btn-outline-light btn-sm" type="button">Join</button>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</footer>
 
 {% schema %}
 {
-    "name": "Footer",
-    "settings": [
-        
-        ]
+  "name": "Footer",
+  "settings": []
 }
 {% endschema %}

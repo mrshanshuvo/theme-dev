@@ -1,12 +1,22 @@
-<div class="announcement-bar">
-    <p>This is announcement-bar</p>
+<div class="announcement-bar bg-dark text-white py-2">
+  <div class="container">
+    <p class="mb-0 text-center fw-semibold" role="status" aria-live="polite">
+      {{ section.settings.message }}
+    </p>
+  </div>
 </div>
+
 
 {% schema %}
 {
-    "name": "Announcement Bar",
-    "settings": [
-        
-        ]
+  "name": "Announcement Bar",
+  "settings": [
+    {
+      "type": "text",
+      "id": "message",
+      "label": "Announcement Text",
+      "default": "25% OFF for US delivery!"
+    }
+  ]
 }
 {% endschema %}
