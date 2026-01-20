@@ -11,21 +11,34 @@
   "sections": {
     "image_banner": {
       "type": "image-banner",
-      "settings": {
-        "image": "shopify://shop_images/4.webp",
-        "heading": "A quality product of the top brand around the world",
-        "heading_color": "#ffffff",
-        "text_color": "#00ff04",
-        "text_bg_color": "#00000066",
-        "button_text_color": "#f1117f",
-        "button_bg_color": "#00ffff",
-        "text": "This is a simple image banner section.",
-        "button_text": "Shop now",
-        "button_link": ""
-      }
+      "settings": {}
     },
     "1768876090f56176ed": {
       "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_ffbb531_MGCGgj": {
+          "type": "ai_gen_block_ffbb531",
+          "settings": {
+            "heading_text": "Glowing Heading",
+            "heading_tag": "h2",
+            "font_size": 48,
+            "font_weight": "700",
+            "text_alignment": "center",
+            "text_color": "#ffffff",
+            "glow_color": "#00ffff",
+            "glow_blur": 10,
+            "animation_speed": 2,
+            "pulse_opacity": 0.8,
+            "padding_top": 40,
+            "padding_bottom": 40,
+            "desktop_width_percent": 100
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_ffbb531_MGCGgj"
+      ],
       "settings": {}
     }
   },
